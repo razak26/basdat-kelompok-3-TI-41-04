@@ -1,0 +1,31 @@
+CREATE TABLE Employee ( 
+ 'nama_employee' varchar(20) NOT NULL,
+ 'Usia_employee' int(2) NOT NULL,
+ 'Jenis_kelamin_employee' varchar(1) NOT NULL,
+ 'Pendidikan_employee' varchar(5) NOT NULL,
+ 'Kode_employee' varchar(5) NOT NULL,
+ PRIMARY KEY ('kode_employee'),
+ FOREIGN KEY (kode_divisi));
+ 
+CREATE TABLE Divisi (
+  'nama_divisi' varchar(20) NOT NULL,
+  'kode_divisi' varchar(5) NOT NULL,
+  'kode_employee' varchar(5) NOT NULL,
+  PRIMARY KEY ('kode_divisi')
+  FOREIGN KEY (kode_employee));
+  
+ INSERT INTO Employee(
+  nama_employee,
+  usia_employee,
+  jenis_kelamin_employee,
+  pendidikan_employee,
+  kode_employee,
+  kode_employee,)
+VALUES ('Tanisa','25','p','S3','TNT','D');
+
+INSERT INTO Divisi (
+  nama_divisi,
+  kode_divisi,
+  kode_employee,)
+VALUES ('HR','D1','TNT')
+
